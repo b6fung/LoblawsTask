@@ -1,13 +1,57 @@
 #Loblaws Image Similarity Tool
 ##This document is to review the tool to see how similar two images are.
 
-###Installation: 
-This application uses python to run everything so first install python [here](https://www.python.org/downloads/).  
-To ready the program, open command line and ```cd``` into where you cloned this project.
+###Installation 
+This project requires three things
+
+  1) Python3  
+  2) virtualenv  
+  3) pip  
+
+To download python3 you can use the link [here](https://www.python.org/downloads/).  
+
 ####Windows
-Then you need to activate the virtual envrionment, you can do that with the command ```imageSim\Scripts\activate.bat```
-####Mac/Linux
-You still need to activate the virtual environment, for macos or linux type in ```source imageSim/bin/activate``` in the terminal
+If you are on windows, then you can still get python3 from the link above.
+Once you have python follow the instructions [here](https://pip.readthedocs.io/en/stable/installing/#do-i-need-to-install-pip) to download pip onto your machine.  
+
+Once pip is installed, you can install virtualenv with 
+
+```pip install virtualenv```
+
+Then, ```cd``` into this directory and create the virtual environment wiht the command 
+
+```virtualenv imageSim```
+
+Now we can activate the virtual image with
+
+```\imageSim\Scripts\activate.bat```
+
+Now to grab all the requirements, type the command
+
+```pip install -r requirements.txt```
+
+####Mac
+If you are on Mac you can also use homebrew to obtain all the libraries that you need first [here](https://brew.sh/)  
+Using brew install python3 with the command  
+
+```brew install python@3```  
+
+To install virtualenv, use the command
+
+```pip3 install virtualenv```
+
+Then, ```cd``` into this directory and create the virtual environment wiht the command 
+
+```virtualenv imageSim```
+
+Now we can activate the virtual image with
+
+```source imageSim/bin/activate ```
+
+Now to grab all the requirements, type the command
+
+```pip install -r requirements.txt```
+
 
 ###Usage
 To use the tool, there are two files that you need  
